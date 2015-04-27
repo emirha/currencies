@@ -39,7 +39,7 @@ class Db {
     }
 
     private function __construct() {
-        $this->pdo = new PDO('mysql:host=localhost;dbname=emir_currencies', 'emir_currencies','k7awE8', array(
+        $this->pdo = new PDO('mysql:host=localhost;dbname=tuzlansk_currencies', 'tuzlansk_currenc','k7awE8', array(
             PDO::ATTR_PERSISTENT => true,
             PDO::ATTR_EMULATE_PREPARES => false
         ));
