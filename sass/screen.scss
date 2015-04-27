@@ -1,0 +1,39 @@
+@import "bootstrap";
+
+main {
+  @extend .container;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  max-width: 1100px;
+}
+
+
+table {
+  @extend .table;
+  @extend .table-responsive;
+  @extend .table-striped;
+}
+
+h2 {
+  font-size: 16px;
+  margin: 0 0 10px 0;
+}
+
+#tops {
+  @extend .row;
+
+  #topCurrencies {
+    @extend .col-sm-6;
+
+    & > div {
+      @extend .col-sm-6;
+    }
+  }
+
+  #topCountries {
+    @extend .col-sm-6;
+
+  }
+}
+
